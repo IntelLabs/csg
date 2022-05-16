@@ -20,7 +20,8 @@ cd src/track/kcf && make & cd ../../../
 ## How to run:
 1. Edit variables in config.py (Optional)
 2. Download machine learning models from: (TODO) 
-3. run 
+3. Run 
+
 For survelliance video: 
 ```Shell
 python3 CSG.py 
