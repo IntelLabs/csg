@@ -26,11 +26,7 @@ For survelliance video:
 python3 CSG.py 
 
 ```
-or For Ego-view video: 
-```Shell
-python3 CSG_ego.py 
 
-```
 
 ## Reqruiments
 
