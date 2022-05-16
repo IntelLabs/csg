@@ -31,7 +31,7 @@ python3 CSG.py
 
 ## Reqruiments
 
-At least 1 GPU is needed. Default, the detection algorithm is deployed on GPU/0. You can change your setting in "config" file 
+At least 1 GPU is needed. By default, the models is deployed on gpu:0. You can change your settings in "config" file. 
 
 ## Licence
 check [LICENSE](LICENSE)
