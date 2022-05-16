@@ -1,7 +1,7 @@
 # Critical Scenario Generation Toolkit
 
 ## Introduction 
-  This repo offers the source code for Critical Scnenario Generation (CSG) toolkit. The toolkit can extract dynamic(trajectories) and static (road) elements from a given surveillance or dash camera video. Then the elements will be organized and fromulated as OpenDrive and OpenScenario files.  
+  This repo offers the source code for Critical Scnenario Generation (CSG) toolkit. The toolkit aims to extract dynamic (trajectories) and static (road) elements from a given surveillance or dash camera video, and fromulated as OpenDrive and OpenScenario files as outputs.  
 ## How to build
 
 1. Install system dependencies: 
@@ -31,7 +31,7 @@ python3 CSG.py
 
 ## Reqruiments
 
-At least 1 GPU is needed. By default, the models is deployed on gpu:0. You can change your settings in "config" file. 
+At least 1 GPU is needed. By default, the models are deployed on gpu:0. You can change your settings in "config" file. 
 
 ## Licence
 check [LICENSE](LICENSE)
