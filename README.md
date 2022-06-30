@@ -19,7 +19,7 @@ cd src/track/kcf && make & cd ../../../
 
 ## How to run:
 1. Edit variables in config.py (Optional)
-2. Download machine learning models from: (To be released soon) 
+2. Download machine learning models from [Google Drive](https://drive.google.com/file/d/1QAyzSvLjLBETgSk5w7hOp-1WGwD9aH9I/view?usp=sharing ) and unzip to "data" folder. 
 3. Run 
 
 - For survelliance video: 
@@ -27,8 +27,10 @@ cd src/track/kcf && make & cd ../../../
 python3 CSG.py 
 ```
 
-- For dash camera video: (To be released soon)
+- For dash camera video: 
+
 It uses [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2 "ORB-SLAM2") to get extrinsic parameters of moving camera.  Please install ORB-SLAM2 first and put the executable file under the "/src/SLAM" folder. 
+
 Then run:
 ```Shell
 python3 CSG_ego.py 
@@ -40,24 +42,24 @@ At least 1 GPU is needed. By default, the models are deployed on gpu:0. You can 
 ## Folder structure
 ```bash
 +-- critical-scenario-generation
-¦   +-- data
-¦   ¦   +-- yolo
-¦   ¦   +-- vehicle_reid
-¦   ¦   +-- mask_rcnn_ego
-¦   ¦   +-- mask_rcnn
-¦   ¦   +-- lane
-¦   ¦   +-- depth
-¦   +-- src
-¦   ¦   +-- SLAM
-¦   ¦   ¦   +-- mono_kitti
-¦   ¦   +-- ...
-¦   +-- Lib_OpenSCENARIO
-¦   +-- icon
-¦   +-- CSG.py
-¦   +-- CSG_ego.py
-¦   +-- ScaleSolver.py
-¦   +-- config.py
-¦   +-- requirements.txt
+Â¦   +-- data
+Â¦   Â¦   +-- yolo
+Â¦   Â¦   +-- vehicle_reid
+Â¦   Â¦   +-- mask_rcnn_ego
+Â¦   Â¦   +-- mask_rcnn
+Â¦   Â¦   +-- lane
+Â¦   Â¦   +-- depth
+Â¦   +-- src
+Â¦   Â¦   +-- SLAM
+Â¦   Â¦   Â¦   +-- mono_kitti
+Â¦   Â¦   +-- ...
+Â¦   +-- Lib_OpenSCENARIO
+Â¦   +-- icon
+Â¦   +-- CSG.py
+Â¦   +-- CSG_ego.py
+Â¦   +-- ScaleSolver.py
+Â¦   +-- config.py
+Â¦   +-- requirements.txt
 ```
 
 ## Licence
