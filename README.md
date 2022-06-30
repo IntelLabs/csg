@@ -22,17 +22,43 @@ cd src/track/kcf && make & cd ../../../
 2. Download machine learning models from: (To be released soon) 
 3. Run 
 
-For survelliance video: 
+- For survelliance video: 
 ```Shell
 python3 CSG.py 
 ```
 
-For dash camera video: (To be released soon)
-
+- For dash camera video: (To be released soon)
+It uses [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2 "ORB-SLAM2") to get extrinsic parameters of moving camera.  Please install ORB-SLAM2 first and put the executable file under the "/src/SLAM" folder. 
+Then run:
+```Shell
+python3 CSG_ego.py 
+```
 
 ## Reqruiments
 
 At least 1 GPU is needed. By default, the models are deployed on gpu:0. You can change your settings in "config" file. 
+## Folder structure
+```bash
++-- critical-scenario-generation
+¦   +-- data
+¦   ¦   +-- yolo
+¦   ¦   +-- vehicle_reid
+¦   ¦   +-- mask_rcnn_ego
+¦   ¦   +-- mask_rcnn
+¦   ¦   +-- lane
+¦   ¦   +-- depth
+¦   +-- src
+¦   ¦   +-- SLAM
+¦   ¦   ¦   +-- mono_kitti
+¦   ¦   +-- ...
+¦   +-- Lib_OpenSCENARIO
+¦   +-- icon
+¦   +-- CSG.py
+¦   +-- CSG_ego.py
+¦   +-- ScaleSolver.py
+¦   +-- config.py
+¦   +-- requirements.txt
+```
 
 ## Licence
 check [LICENSE](LICENSE)
