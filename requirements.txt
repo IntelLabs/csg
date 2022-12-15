@@ -6,7 +6,7 @@ pillow==7.0.0
 opencv-python==3.4.9.33
 scikit-image==0.16.2
 scikit-learn==0.22.2
-tensorflow-gpu==1.15.2
+tensorflow-gpu==2.9.3
 cython==0.29.15
 pycocotools
 ipython==7.13.0
