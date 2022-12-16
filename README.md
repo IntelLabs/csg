@@ -10,6 +10,7 @@ sudo apt-get install python3-tk
 ``` 
 2. Install python3 package: 
 ```Shell
+pip3 install Cython numpy
 pip3 install -r requirements.txt
 ```
 3. compile cython package
