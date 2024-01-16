@@ -256,10 +256,10 @@ class MainGUI:
 		#icon image
 		self.icon_image_size=(20,20)
 		warning_icon = Image.open('icon/warning.png')
-		warning_thumb=ImageOps.fit(warning_icon, self.icon_image_size, Image.ANTIALIAS)
+		warning_thumb=ImageOps.fit(warning_icon, self.icon_image_size, Image.LANCZOS)
 		self.warning_tkimg = ImageTk.PhotoImage(warning_thumb)
 		pass_icon = Image.open('icon/pass.png')
-		pass_thumb=ImageOps.fit(pass_icon, self.icon_image_size, Image.ANTIALIAS)
+		pass_thumb=ImageOps.fit(pass_icon, self.icon_image_size, Image.LANCZOS)
 		self.pass_tkimg = ImageTk.PhotoImage(pass_thumb)
 		empty_arr = np.zeros([self.icon_image_size[1], self.icon_image_size[0], 3],dtype=np.uint8)
 		empty_arr.fill(255)

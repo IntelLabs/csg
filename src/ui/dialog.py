@@ -176,7 +176,7 @@ class ImageViewerFrame(ttk.Frame):
         rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
         rgb = cv2.resize(rgb, (self.grid_size_w, self.grid_size_h))
        # pil_img = Image.fromarray(rgb)
-       # pil_img.thumbnail((self.grid_size_w, self.grid_size_h),Image.ANTIALIAS)
+       # pil_img.thumbnail((self.grid_size_w, self.grid_size_h),Image.LANCZOS)
         img = ImageTk.PhotoImage(Image.fromarray(rgb))
        # label = Label(self, image=img)
         r,c = idx//self.column_num, idx%self.column_num
