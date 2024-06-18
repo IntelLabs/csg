@@ -13,7 +13,7 @@ pykalman==0.9.5
 python-magic==0.4.27
 PyYAML==6.0
 scikit-image==0.19.3
-scikit-learn==1.2.0
+scikit-learn==1.5.0
 scipy==1.10.0
 tensorflow==2.12.0
 torch==1.13.1
