@@ -16,5 +16,5 @@ scikit-image==0.19.3
 scikit-learn==1.5.0
 scipy==1.10.0
 tensorflow==2.12.1
-torch==2.6.0
+torch==2.7.1
 vtk==9.2.2
